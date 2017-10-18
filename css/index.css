@@ -1,0 +1,804 @@
+*
+{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+body
+{
+	font-family: Helvetica, Arial, Sans-serif;
+	font-size: 13px;
+	background-color: #000000;
+}
+
+.container
+{
+	width: 700px;
+	margin: 50px auto 20px;
+}
+
+/*.title
+{
+	font-size: 30px;
+	font-weight: bold;
+	font-family: "Courier New", Monospace;
+	text-shadow: #ccc 2px 2px 1px;
+	padding-bottom: 5px;
+}*/
+
+.chat
+{
+	/*border: 1px solid #ccc;*/
+	height: 750px;
+	overflow-y: scroll;
+	/*background-color: #404040;*/
+	border-radius: 10px 0 0 10px;
+}
+
+::-webkit-scrollbar
+{
+	width: 0px;
+	background: transparent;
+}
+
+.chat div
+{
+	/*margin: 20px;*/
+	line-height: 30px;
+}
+
+.chat .party
+{
+	font-weight: bold;
+}
+
+.chat .you
+{
+	color: black;
+}
+
+.chat .other
+{
+	color: white;
+}
+
+.chat .text
+{
+
+}
+
+.busy
+{
+	position: absolute;
+	padding: 3px 0;
+	color: #666;
+	display: none;
+	font-size: 11px;
+}
+
+.input
+{
+	margin-top: 20px;
+}
+
+.input input
+{
+	vertical-align: top;
+	/*float: center;*/
+	display : inline-block;
+	border: 1px solid #ccc;
+	padding: 15px;
+	width: 600px;
+	margin: 0;
+	border-radius: 5px;
+}
+.input a:hover
+{
+	background-color: #ddd;
+	cursor: pointer;
+}
+
+.text.you
+{
+	background: rgba(210, 171, 153, 0.65);
+	float: right;
+	padding: 15px 20px;
+	border-radius: 5px;
+
+}
+
+.text.other
+{
+	background: rgba(83, 19, 30, 0.65);
+	padding: 15px 20px;
+	border-radius: 10px;
+	max-width : 500px;
+}
+
+.party.you, .party.other
+{
+	display: none;
+}
+
+.row
+{
+	margin: 25px 0;
+	font-size: 18px;
+	display: list-item;
+}*
+{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+body
+{
+	font-family: Helvetica, Arial, Sans-serif;
+	font-size: 13px;
+	background-color: #000000;
+}
+
+.container
+{
+	width: 700px;
+	margin: 50px auto 20px;
+}
+
+/*.title
+{
+	font-size: 30px;
+	font-weight: bold;
+	font-family: "Courier New", Monospace;
+	text-shadow: #ccc 2px 2px 1px;
+	padding-bottom: 5px;
+}*/
+
+.chat
+{
+	/*border: 1px solid #ccc;*/
+	height: 750px;
+	overflow-y: scroll;
+	/*background-color: #404040;*/
+	border-radius: 10px 0 0 10px;
+}
+
+::-webkit-scrollbar
+{
+	width: 0px;
+	background: transparent;
+}
+
+.chat div
+{
+	/*margin: 20px;*/
+	line-height: 30px;
+}
+
+.chat .party
+{
+	font-weight: bold;
+}
+
+.chat .you
+{
+	color: black;
+}
+
+.chat .other
+{
+	color: white;
+}
+
+.chat .text
+{
+
+}
+
+.busy
+{
+	position: absolute;
+	padding: 3px 0;
+	color: #666;
+	display: none;
+	font-size: 11px;
+}
+
+.input
+{
+	margin-top: 20px;
+}
+
+.input input
+{
+	vertical-align: top;
+	/*float: center;*/
+	display : inline-block;
+	border: 1px solid #ccc;
+	padding: 15px;
+	width: 600px;
+	margin: 0;
+	border-radius: 5px;
+}
+.input a:hover
+{
+	background-color: #ddd;
+	cursor: pointer;
+}
+
+.text.you
+{
+	background: rgba(210, 171, 153, 0.65);
+	float: right;
+	padding: 15px 20px;
+	border-radius: 5px;
+
+}
+
+.text.other
+{
+	background: rgba(83, 19, 30, 0.65);
+	padding: 15px 20px;
+	border-radius: 10px;
+	max-width : 500px;
+}
+
+.party.you, .party.other
+{
+	display: none;
+}
+
+.row
+{
+	margin: 25px 0;
+	font-size: 18px;
+	display: list-item;
+}*
+{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+body
+{
+	font-family: Helvetica, Arial, Sans-serif;
+	font-size: 13px;
+	background-color: #000000;
+}
+
+.container
+{
+	width: 700px;
+	margin: 50px auto 20px;
+}
+
+/*.title
+{
+	font-size: 30px;
+	font-weight: bold;
+	font-family: "Courier New", Monospace;
+	text-shadow: #ccc 2px 2px 1px;
+	padding-bottom: 5px;
+}*/
+
+.chat
+{
+	/*border: 1px solid #ccc;*/
+	height: 750px;
+	overflow-y: scroll;
+	/*background-color: #404040;*/
+	border-radius: 10px 0 0 10px;
+}
+
+::-webkit-scrollbar
+{
+	width: 0px;
+	background: transparent;
+}
+
+.chat div
+{
+	/*margin: 20px;*/
+	line-height: 30px;
+}
+
+.chat .party
+{
+	font-weight: bold;
+}
+
+.chat .you
+{
+	color: black;
+}
+
+.chat .other
+{
+	color: white;
+}
+
+.chat .text
+{
+
+}
+
+.busy
+{
+	position: absolute;
+	padding: 3px 0;
+	color: #666;
+	display: none;
+	font-size: 11px;
+}
+
+.input
+{
+	margin-top: 20px;
+}
+
+.input input
+{
+	vertical-align: top;
+	/*float: center;*/
+	display : inline-block;
+	border: 1px solid #ccc;
+	padding: 15px;
+	width: 600px;
+	margin: 0;
+	border-radius: 5px;
+}
+.input a:hover
+{
+	background-color: #ddd;
+	cursor: pointer;
+}
+
+.text.you
+{
+	background: rgba(210, 171, 153, 0.65);
+	float: right;
+	padding: 15px 20px;
+	border-radius: 5px;
+
+}
+
+.text.other
+{
+	background: rgba(83, 19, 30, 0.65);
+	padding: 15px 20px;
+	border-radius: 10px;
+	max-width : 500px;
+}
+
+.party.you, .party.other
+{
+	display: none;
+}
+
+.row
+{
+	margin: 25px 0;
+	font-size: 18px;
+	display: list-item;
+}*
+{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+body
+{
+	font-family: Helvetica, Arial, Sans-serif;
+	font-size: 13px;
+	background-color: #000000;
+}
+
+.container
+{
+	width: 700px;
+	margin: 50px auto 20px;
+}
+
+/*.title
+{
+	font-size: 30px;
+	font-weight: bold;
+	font-family: "Courier New", Monospace;
+	text-shadow: #ccc 2px 2px 1px;
+	padding-bottom: 5px;
+}*/
+
+.chat
+{
+	/*border: 1px solid #ccc;*/
+	height: 750px;
+	overflow-y: scroll;
+	/*background-color: #404040;*/
+	border-radius: 10px 0 0 10px;
+}
+
+::-webkit-scrollbar
+{
+	width: 0px;
+	background: transparent;
+}
+
+.chat div
+{
+	/*margin: 20px;*/
+	line-height: 30px;
+}
+
+.chat .party
+{
+	font-weight: bold;
+}
+
+.chat .you
+{
+	color: black;
+}
+
+.chat .other
+{
+	color: white;
+}
+
+.chat .text
+{
+
+}
+
+.busy
+{
+	position: absolute;
+	padding: 3px 0;
+	color: #666;
+	display: none;
+	font-size: 11px;
+}
+
+.input
+{
+	margin-top: 20px;
+}
+
+.input input
+{
+	vertical-align: top;
+	/*float: center;*/
+	display : inline-block;
+	border: 1px solid #ccc;
+	padding: 15px;
+	width: 600px;
+	margin: 0;
+	border-radius: 5px;
+}
+.input a:hover
+{
+	background-color: #ddd;
+	cursor: pointer;
+}
+
+.text.you
+{
+	background: rgba(210, 171, 153, 0.65);
+	float: right;
+	padding: 15px 20px;
+	border-radius: 5px;
+
+}
+
+.text.other
+{
+	background: rgba(83, 19, 30, 0.65);
+	padding: 15px 20px;
+	border-radius: 10px;
+	max-width : 500px;
+}
+
+.party.you, .party.other
+{
+	display: none;
+}
+
+.row
+{
+	margin: 25px 0;
+	font-size: 18px;
+	display: list-item;
+}*
+{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+body
+{
+	font-family: Helvetica, Arial, Sans-serif;
+	font-size: 13px;
+	background-color: #000000;
+}
+
+.container
+{
+	width: 700px;
+	margin: 50px auto 20px;
+}
+
+/*.title
+{
+	font-size: 30px;
+	font-weight: bold;
+	font-family: "Courier New", Monospace;
+	text-shadow: #ccc 2px 2px 1px;
+	padding-bottom: 5px;
+}*/
+
+.chat
+{
+	/*border: 1px solid #ccc;*/
+	height: 750px;
+	overflow-y: scroll;
+	/*background-color: #404040;*/
+	border-radius: 10px 0 0 10px;
+}
+
+::-webkit-scrollbar
+{
+	width: 0px;
+	background: transparent;
+}
+
+.chat div
+{
+	/*margin: 20px;*/
+	line-height: 30px;
+}
+
+.chat .party
+{
+	font-weight: bold;
+}
+
+.chat .you
+{
+	color: black;
+}
+
+.chat .other
+{
+	color: white;
+}
+
+.chat .text
+{
+
+}
+
+.busy
+{
+	position: absolute;
+	padding: 3px 0;
+	color: #666;
+	display: none;
+	font-size: 11px;
+}
+
+.input
+{
+	margin-top: 20px;
+}
+
+.input input
+{
+	vertical-align: top;
+	/*float: center;*/
+	display : inline-block;
+	border: 1px solid #ccc;
+	padding: 15px;
+	width: 600px;
+	margin: 0;
+	border-radius: 5px;
+}
+.input a:hover
+{
+	background-color: #ddd;
+	cursor: pointer;
+}
+
+.text.you
+{
+	background: rgba(210, 171, 153, 0.65);
+	float: right;
+	padding: 15px 20px;
+	border-radius: 5px;
+
+}
+
+.text.other
+{
+	background: rgba(83, 19, 30, 0.65);
+	padding: 15px 20px;
+	border-radius: 10px;
+	max-width : 500px;
+}
+
+.party.you, .party.other
+{
+	display: none;
+}
+
+.row
+{
+	margin: 25px 0;
+	font-size: 18px;
+	display: list-item;
+}*
+{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+body
+{
+	font-family: Helvetica, Arial, Sans-serif;
+	font-size: 13px;
+	background-color: #000000;
+}
+
+.container
+{
+	width: 100%;
+	margin: 25px auto 20px;
+}
+
+/*.title
+{
+	font-size: 30px;
+	font-weight: bold;
+	font-family: "Courier New", Monospace;
+	text-shadow: #ccc 2px 2px 1px;
+	padding-bottom: 5px;
+}*/
+
+.chat
+{
+	/*border: 1px solid #ccc;*/
+	max-height: 60vh;
+	overflow-y: hidden;
+	/*background-color: #404040;*/
+	border-radius: 10px 0 0 10px;
+}
+
+.chat div
+{
+	/*margin: 20px;*/
+	line-height: 20px;
+}
+
+.chat .party
+{
+	font-weight: bold;
+}
+
+.chat .you
+{
+	color: black;
+}
+
+.chat .other
+{
+	color: white;
+}
+
+.chat .text
+{
+
+}
+
+.busy
+{
+	position: absolute;
+	padding: 3px 0;
+	color: #666;
+	display: none;
+	font-size: 11px;
+}
+
+.input
+{
+	margin-top: 20px;
+}
+
+.input input
+{
+	vertical-align: top;
+	/*float: center;*/
+	display : inline-block;
+	/*border: 1px solid #ccc;*/
+	padding: 15px;
+	width: 100%;
+	margin: 0;
+	/*border-radius: 5px;*/
+	color: grey;
+	text-align: center;
+	background: black;
+	border: none;
+}
+.input input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: grey;
+}
+.input input::-moz-placeholder { /* Firefox 19+ */
+  color: grey;
+}
+.input input:-ms-input-placeholder { /* IE 10+ */
+  color: grey;
+}
+.input input:-moz-placeholder { /* Firefox 18- */
+  color: grey;
+}
+
+/*send button*/
+/*.input a {
+	vertical-align: top;
+	float: right;
+	font-weight: bold;
+	border: 1px solid #ccc;
+	background-color: #efefef;
+	padding: 7px 35px;
+	color: black;
+	text-decoration: none;
+	border-radius: 5px;
+}*/
+
+.input a:hover
+{
+	background-color: #ddd;
+	cursor: pointer;
+}
+
+.text.you
+{
+	/*background: rgba(210, 171, 153, 0.65);*/
+	background: #FEFEE2;
+	color: black;
+	float: right;
+	padding: 15px 20px;
+	border-radius: 5px;
+
+}
+
+.text.other
+{
+	/*background: rgba(83, 19, 30, 0.65);*/
+	background: #FEFEE2;
+	color: black;
+	padding: 15px 20px;
+	border-radius: 10px;
+}
+
+.party.you, .party.other
+{
+	display: none;
+}
+
+.row
+{
+	margin: 25px 0;
+	font-size: 18px;
+	display: list-item;
+
+}
+
+/*img
+{
+	max-width: 10%;
+	max-height: 10%;
+	padding-bottom: 10px;
+}*/
